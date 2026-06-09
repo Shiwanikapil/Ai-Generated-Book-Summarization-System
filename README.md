@@ -1,90 +1,53 @@
-\# AI Project
+AI-Powered Document Processing & Summarization System
 
+📌 Overview
 
+An AI-powered application that processes PDF and DOCX documents and generates concise summaries using NLP and Transformer-based models. Built with a modular architecture for scalability and future enhancements.
 
-\## 📌 Overview
+✨ Features
 
-This project is an AI-powered document processing and NLP system built using:
+- PDF & DOCX processing
+- AI-based text summarization
+- Secure authentication with bcrypt
+- MongoDB 
+- Streamlit interactive UI
+- Modular project structure
 
-\- Streamlit (Frontend)
+🛠 Tech Stack
 
-\- Transformers \& HuggingFace (AI Models)
+- Python
+- Streamlit
+- Transformers & Hugging Face
+- PyPDF2 / pdfplumber
+- python-docx
+- MongoDB 
+- bcrypt
 
-\- PyPDF2 / pdfplumber (PDF Processing)
+🚀 Run Locally
 
-\- python-docx (DOCX Processing)
+pip install -r requirements.txt
+streamlit run frontend/main.py
 
-\- bcrypt (Password Hashing)
+📁 Structure
 
-\- MongoDB / SQLite (Database)
+Ai_Project/
+├── frontend/
+├── backend/
+├── models/
+├── utils/
+├── config/
+└── tests/
 
-\- Python 3.9+
+🔐 Security
 
-\- Modular Folder Structure
+- Passwords hashed using bcrypt
+- API keys stored in .env
+- Sensitive files excluded from Git
 
+👩‍💻 Author
 
-
-\## 🛠 Installation Steps
-
-
-
-1\. Install Python 3.9+
-
-2\. Create virtual environment:
-
-3\. Activate environment: 
-
-4\. Install dependencies:  
-
-5\. Create `.env` file with API keys and database URLs (DO NOT COMMIT).
-
-6\. Run the app:
-
-
-
-\## 📁 Project Structure
-
-Ai\_Project/
-
-│── frontend/ # Streamlit UI
-
-│── backend/ # Business logic
-
-│── utils/ # Helper functions
-
-│── models/ # AI model integration
-
-│── data/ # Uploads, cache (ignored)
-
-│── config/ # Configuration files
-
-└── tests/ # Unit tests
-
-
-
-\## 🔐 Security
-
-\- `.env` file is ignored from Git.
-
-\- Passwords stored using bcrypt hashing.
-
-\- API keys never committed.
-
-
-
-\## 📜 Logging
-
-Logging supported via `config/logging\_config.py`.
-
-
-
-\## 🚀 Goal
-
-Build a scalable, modular AI project ready for further development.
-
-
-
-&nbsp;
+Shiwani Kapil
+B.Tech (3rd Year)
 
 
 
