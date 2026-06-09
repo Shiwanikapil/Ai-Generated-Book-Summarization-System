@@ -147,6 +147,44 @@ def search_books(user_id, title=None, status=None):
 
 # ---------- ADMIN ANALYTICS ----------
 
+def get_total_users():
+    return users.count_documents({})
+
+def get_active_users():
+    return users.count_documents({"is active": True})
+
+def get_total_books():
+    return books.count_documents({})
+
+def get_total_summaries():
+    return summaries.count_documents({})
+
+def get_most_active_users(limit=5):
+    pipeline = [
+        {
+            "$lookup": {
+                "from": "books",
+                "localField": "_id",
+                "foreignField": "user_id",
+                "as": "user_books"
+            }
+        },
+        {
+            "$project": {
+                "name": 1,
+                "email": 1,
+                "book_count": {"$size": "$user_books"}
+            }
+        },
+        {
+            "$sort": {"book_count": -1}
+        },
+        {
+            "$limit": limit
+        }
+    ]
+    return list(users.aggregate(pipeline))
+
 def count_users():
     return users.count_documents({})
 
