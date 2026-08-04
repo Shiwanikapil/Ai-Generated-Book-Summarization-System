@@ -15,7 +15,7 @@ An AI-powered application that processes PDF and DOCX documents and generates co
 
 🛠 Tech Stack
 
-- Python
+- python
 - Streamlit
 - Transformers & Hugging Face
 - PyPDF2 / pdfplumber
@@ -44,10 +44,6 @@ Ai_Project/
 - API keys stored in .env
 - Sensitive files excluded from Git
 
-👩‍💻 Author
-
-Shiwani Kapil
-B.Tech (3rd Year)
 
 
 
