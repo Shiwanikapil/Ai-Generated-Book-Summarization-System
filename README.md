@@ -42,7 +42,7 @@ Ai_Project/
 
 - Passwords hashed using bcrypt
 - API keys stored in .env
-- Sensitive files excluded from Git
+- Sensitive files excluded from Git.
 
 
 
