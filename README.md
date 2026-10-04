@@ -2,7 +2,7 @@ AI-Powered Document Processing & Summarization System
 
 📌 Overview
 
-An AI-powered application that processes PDF and DOCX documents and generates concise summaries using NLP and Transformer-based models. Built with a modular architecture for scalability and future enhancements.
+An AI-powered application that processes PDF and DOCX documents and generates concise summaries using NLP and Transformer-based models. Built with a modular architecture for scalability and future enhancements. 
 
 ✨ Features
 
