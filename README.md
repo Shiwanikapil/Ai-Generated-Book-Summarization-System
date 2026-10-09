@@ -1,4 +1,4 @@
-AI-Powered Document Processing & Summarization System  
+AI-Powered Document Processing & Summarization System   
 
 📌 Overview
 
